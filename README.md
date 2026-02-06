@@ -49,5 +49,5 @@ realizar el juevo ya explicado anteriormente (Kael Arrow).
 
 ### 5. OTRA INFORMACIÓN.
 - [Itch.io](https://dmenbar.itch.io/)
--[Github](https://github.com/mengualbarragandavid-wq)
+- [Github](https://github.com/mengualbarragandavid-wq)
 
