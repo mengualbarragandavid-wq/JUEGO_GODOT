@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://rmy80weykgt0"]
+
+[ext_resource type="PackedScene" uid="uid://doyvvnv4nl8j2" path="res://nivel1/plantilla_mapa.tscn" id="1_m8l61"]
+[ext_resource type="PackedScene" uid="uid://ca5c2sxawmfjh" path="res://personaje/personaje.tscn" id="2_h558p"]
+
+[node name="NIVEL1" type="Node2D" unique_id=992934895]
+
+[node name="NIVEL1" parent="." unique_id=901047704 instance=ExtResource("1_m8l61")]
+
+[node name="personaje" parent="." unique_id=922961524 instance=ExtResource("2_h558p")]
+position = Vector2(180, 100)

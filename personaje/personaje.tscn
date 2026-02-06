@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ca5c2sxawmfjh"]
+
+[ext_resource type="Script" uid="uid://byym5bsuj2bl0" path="res://personaje/personaje.gd" id="1_diry1"]
+[ext_resource type="SpriteFrames" uid="uid://dqlkeg03dnskj" path="res://personaje/new_sprite_frames.tres" id="1_rqmaa"]
+[ext_resource type="Material" uid="uid://cbw4k3rwk7wuk" path="res://personaje/new_shader_material.tres" id="2_i8xir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_diry1"]
+size = Vector2(13, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i8xir"]
+size = Vector2(13, 21)
+
+[node name="personaje" type="CharacterBody2D" unique_id=922961524 node_paths=PackedStringArray("animacion", "area_2d")]
+collision_layer = 4
+script = ExtResource("1_diry1")
+animacion = NodePath("AnimatedSprite2D")
+area_2d = NodePath("Area2D")
+material_personaje_rojo = ExtResource("2_i8xir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1235824088]
+visible = false
+position = Vector2(-1.5, -0.5)
+shape = SubResource("RectangleShape2D_diry1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1081968062]
+position = Vector2(0, -3)
+scale = Vector2(0.3472222, 0.39825583)
+sprite_frames = ExtResource("1_rqmaa")
+animation = &"saltar"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=3924727]
+visible = false
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1024728415]
+position = Vector2(-1.5, -0.5)
+shape = SubResource("RectangleShape2D_i8xir")
