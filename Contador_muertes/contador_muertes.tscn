@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bh42oapcgfabh"]
+
+[ext_resource type="Script" uid="uid://djjsq186r6xha" path="res://Contador_muertes/contador_muertes.gd" id="1_vbj2x"]
+
+[node name="ContadorMuertes" type="Control" unique_id=799935127 node_paths=PackedStringArray("label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vbj2x")
+label = NodePath("HBoxContainer/Titulo")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2055952219]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 8
+
+[node name="Titulo" type="Label" parent="HBoxContainer" unique_id=446707679]
+layout_mode = 2
+text = "Muertes: "
+
+[node name="Valor" type="Label" parent="HBoxContainer" unique_id=261800164]
+layout_mode = 2
+text = "0"

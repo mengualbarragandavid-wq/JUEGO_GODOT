@@ -2,10 +2,32 @@
 
 [ext_resource type="Script" uid="uid://cww0maxne54r3" path="res://personaje/escena_principal/escena_principal.gd" id="1_dh2nr"]
 [ext_resource type="PackedScene" uid="uid://rmy80weykgt0" path="res://nivel1/nivel_1.tscn" id="2_gpow4"]
+[ext_resource type="PackedScene" uid="uid://do42tq2eshflc" path="res://moneda/ContenedorMonedas/escena_final/escena_final.tscn" id="3_jsbew"]
+[ext_resource type="AudioStream" uid="uid://xesqx5vgn0du" path="res://lesiakower-super-mario-64-alarm-clock-110801.mp3" id="4_iq15t"]
+[ext_resource type="PackedScene" uid="uid://bh42oapcgfabh" path="res://Contador_muertes/contador_muertes.tscn" id="5_c48ti"]
+[ext_resource type="Script" uid="uid://bhsm4sr8alf8i" path="res://personaje/escena_principal/controlador_pausa.gd" id="6_8xkrg"]
 
 [node name="escena_principal" type="Node2D" unique_id=1783857647]
 script = ExtResource("1_dh2nr")
-niveles = Array[PackedScene]([ExtResource("2_gpow4")])
+niveles = Array[PackedScene]([ExtResource("2_gpow4"), ExtResource("3_jsbew")])
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2085514491]
 zoom = Vector2(2.475, 2.475)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1676589467]
+stream = ExtResource("4_iq15t")
+autoplay = true
+bus = &"musica"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=417861768]
+
+[node name="ContadorMuertes" parent="CanvasLayer" unique_id=799935127 instance=ExtResource("5_c48ti")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+grow_vertical = 1
+
+[node name="Controlador_pausa" type="Node" parent="." unique_id=788344656]
+process_mode = 3
+script = ExtResource("6_8xkrg")
