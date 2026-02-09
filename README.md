@@ -16,10 +16,7 @@ número de veces.
 
 ### 2. ⚙️ CARACTERÍSTICAS.
 - Nos encontramos ante un juego para dispositivos “Windows”.
-- El personaje que utilizaremos será el predeterminado por el juevo teniendo la
-posibilidad de cambiarlo.
-- Los mundos (más niveles) se van desbloqueando según consigues todas las
-monedas de ese nivel.
+- El personaje que utilizaremos será el predeterminado por el juego.
 - Cabe la posibilidad que durante un nivel nos encontremos objetos que caigan
 desde la parte superior que al tocarnos nos eliminará.
 
@@ -45,9 +42,12 @@ tengo aún el control de cómo realizar cada una de las acciones que quiero.
 -  En unas semanas cuando tenga más control de la plataforma, me lanzaré a
 realizar el juevo ya explicado anteriormente (Kael Arrow).
 
+### 5. FUTUROS CAMBIOS.
+-  Proximamente, añadiremos más niveles, más personajes, objetos que se mueven y nos matarán y enemigos.
+
 ---
 
-### 5. OTRA INFORMACIÓN.
+### 6. OTRA INFORMACIÓN.
 - [Itch.io](https://dmenbar.itch.io/)
 - [Github](https://github.com/mengualbarragandavid-wq)
 
